@@ -1,5 +1,5 @@
 import GKViper
 
-class ___FILEBASENAME___ViewModel: ViperViewModel {
+class ___VARIABLE_productName___ViewModel: ViperViewModel {
     
 }

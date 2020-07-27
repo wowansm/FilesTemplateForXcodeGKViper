@@ -1,14 +1,14 @@
 import GKViper
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput: ___FILEBASENAMEASIDENTIFIER___InteractorInput { }
+protocol ___VARIABLE_productName___InteractorInput: ViperInteractorInput { }
 
-protocol InitialInteractorOutput: ___FILEBASENAMEASIDENTIFIER___InteractorOutput { }
+protocol ___VARIABLE_productName___InteractorOutput: ViperInteractorOutput { }
 
-open class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___Interactor, ___FILEBASENAMEASIDENTIFIER___InteractorInput {
+open class ___VARIABLE_productName___Interactor: ViperInteractor, ___VARIABLE_productName___InteractorInput {
 
     // MARK: - Props
-    private var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput? {
-        guard let output = self._output as? ___FILEBASENAMEASIDENTIFIER___InteractorOutput else {
+    private var output: ___VARIABLE_productName___InteractorOutput? {
+        guard let output = self._output as? ___VARIABLE_productName___InteractorOutput else {
             return nil
         }
         return output
@@ -19,7 +19,7 @@ open class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER
         super.init()
     }
     
-    // MARK: - InitialInteractorInput
+    // MARK: - ___VARIABLE_productName___InteractorInput
     
     // MARK: - Module functions
 }

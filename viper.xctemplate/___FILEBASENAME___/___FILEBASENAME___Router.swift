@@ -1,20 +1,20 @@
 import GKViper
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterInput: ViperRouterInput {
+protocol ___VARIABLE_productName___RouterInput: ViperRouterInput {
     func presentMainViewController()
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Router: ViperRouter, ___FILEBASENAMEASIDENTIFIER___RouterInput {
+class ___VARIABLE_productName___Router: ViperRouter, ___VARIABLE_productName___RouterInput {
     
     // MARK: - Props
-    fileprivate var mainController: ___FILEBASENAMEASIDENTIFIER___ViewController? {
-        guard let mainController = self._mainController as? ___FILEBASENAMEASIDENTIFIER___ViewController else {
+    fileprivate var mainController: ___VARIABLE_productName___ViewController? {
+        guard let mainController = self._mainController as? ___VARIABLE_productName___ViewController else {
             return nil
         }
         return mainController
     }
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___RouterInput
+    // MARK: - ___VARIABLE_productName___RouterInput
     func presentMainViewController() {
 //        let vc = MainAssembly.create()
 //        _ = MainAssembly.configure(with: vc)

@@ -1,41 +1,41 @@
 import GKViper
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput: ___FILEBASENAMEASIDENTIFIER___PresenterInput { }
+protocol ___VARIABLE_productName___PresenterInput: ViperPresenterInput { }
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Presenter, ___FILEBASENAMEASIDENTIFIER___PresenterInput, ___FILEBASENAMEASIDENTIFIER___ViewOutput, ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
+class ___VARIABLE_productName___Presenter: ViperPresenter, ___VARIABLE_productName___PresenterInput, ___VARIABLE_productName___ViewOutput, ___VARIABLE_productName___InteractorOutput {
     
     // MARK: - Props
-    fileprivate var view: ___FILEBASENAMEASIDENTIFIER___ViewInput? {
-        guard let view = self._view as? ___FILEBASENAMEASIDENTIFIER___ViewInput else {
+    fileprivate var view: ___VARIABLE_productName___ViewInput? {
+        guard let view = self._view as? ___VARIABLE_productName___ViewInput else {
             return nil
         }
         return view
     }
     
-    fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput? {
-        guard let interactor = self._interactor as? ___FILEBASENAMEASIDENTIFIER___InteractorInput else {
+    fileprivate var interactor: ___VARIABLE_productName___InteractorInput? {
+        guard let interactor = self._interactor as? ___VARIABLE_productName___InteractorInput else {
             return nil
         }
         return interactor
     }
     
-    fileprivate var router: ___FILEBASENAMEASIDENTIFIER___RouterInput? {
-        guard let router = self._router as? ___FILEBASENAMEASIDENTIFIER___RouterInput else {
+    fileprivate var router: ___VARIABLE_productName___RouterInput? {
+        guard let router = self._router as? ___VARIABLE_productName___RouterInput else {
             return nil
         }
         return router
     }
     
-    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel
+    var viewModel: ___VARIABLE_productName___ViewModel
     
     // MARK: - Initialization
     override init() {
-        self.viewModel = ___FILEBASENAMEASIDENTIFIER___ViewModel()
+        self.viewModel = ___VARIABLE_productName___ViewModel()
     }
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___PresenterInput
+    // MARK: - ___VARIABLE_productName___PresenterInput
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___ViewOutput
+    // MARK: - ___VARIABLE_productName___ViewOutput
     override func viewIsReady(_ controller: UIViewController) {
         self.view?.setupInitialState(with: self.viewModel)
         
@@ -46,7 +46,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Pre
         })
     }
     
-    // MARK: - ___FILEBASENAMEASIDENTIFIER___InteractorOutput
+    // MARK: - ___VARIABLE_productName___InteractorOutput
     
     // MARK: - Module functions
 }

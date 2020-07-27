@@ -1,16 +1,16 @@
 import GKViper
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewInput: ViperViewInput { }
+protocol ___VARIABLE_productName___ViewInput: ViperViewInput { }
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewOutput: ViperViewOutput { }
+protocol ___VARIABLE_productName___ViewOutput: ViperViewOutput { }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController, ___FILEBASENAMEASIDENTIFIER___ViewInput {
+class ___VARIABLE_productName___ViewController: ViperViewController, ___VARIABLE_productName___ViewInput {
     
     // MARK: - Outlets
     
     // MARK: - Props
-    fileprivate var output: ___FILEBASENAME___ViewOutput? {
-        guard let output = self._output as? ___FILEBASENAME___ViewOutput else { return nil }
+    fileprivate var output: ___VARIABLE_productName___ViewOutput? {
+        guard let output = self._output as? ___VARIABLE_productName___ViewOutput else { return nil }
         return output
     }
     
@@ -25,7 +25,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController, ___FILE
     
     // MARK: - Setup functions
     func setupComponents() {
-        self.navigationItem.title = ___FILEBASENAME___Localization.navigationTitle.localized
+        self.navigationItem.title = ___VARIABLE_productName___Localization.navigationTitle.localized
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
@@ -33,7 +33,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController, ___FILE
     
     func applyStyles() { }
     
-    // MARK: - InitialViewInput
+    // MARK: - ___VARIABLE_productName___ViewInput
     override func setupInitialState(with viewModel: ViperViewModel) {
         super.setupInitialState(with: viewModel)
         
@@ -44,10 +44,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: ViperViewController, ___FILE
 }
 
 // MARK: - Actions
-extension ___FILEBASENAME___ViewController { }
+extension ___VARIABLE_productName___ViewController { }
 
 // MARK: - Animations
-extension ___FILEBASENAME___ViewController { }
+extension ___VARIABLE_productName___ViewController { }
 
 // MARK: - Module functions
-extension ___FILEBASENAME___ViewController { }
+extension ___VARIABLE_productName___ViewController { }
